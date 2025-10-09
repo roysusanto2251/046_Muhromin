@@ -133,3 +133,4 @@ print(f"Stok tersisa: {stok_barang}")
 pesan = "Halo"
 pesan += ", selamat datang!"
 print(pesan)
+
