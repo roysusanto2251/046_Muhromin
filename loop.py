@@ -1,105 +1,142 @@
+# =============================================
+# PROGRAM 1: PERULANGAN DENGAN VARIABEL SAMA
+# =============================================
 # Contoh penggunaan variabel loop dengan nama yang sama dengan daftar
-# buah = ["apel", "pisang", "ceri"]
-# for buah in buah:
-#     print(buah)
+buah = ["apel", "pisang", "ceri"]
+for buah in buah:
+    print(buah)
 
-# kata = "python"
-# for huruf in kata:
-#     print(huruf)
+# =============================================
+# PROGRAM 2: PERULANGAN PADA STRING
+# =============================================
+kata = "python"
+for huruf in kata:
+    print(huruf)
 
-# for i in range(5):
-    # print(i)
+# =============================================
+# PROGRAM 3: PERULANGAN DENGAN RANGE SEDERHANA
+# =============================================
+for i in range(5):
+    print(i)
 
-# for i in range(2, 10, 2):
-#     print(i)
+# =============================================
+# PROGRAM 4: PERULANGAN DENGAN RANGE KOMPLEKS
+# =============================================
+for i in range(2, 10, 2):
+    print(i)
 
-# atas = int(input("Batas atas: "))
-# bawah = int(input("Batas bawah: "))
-# pilih = input("Pilih (ganjil/genap?): ")
+# =============================================
+# PROGRAM 5: FILTER BILANGAN GANJIL/GENAP
+# =============================================
+atas = int(input("Batas atas: "))
+bawah = int(input("Batas bawah: "))
+pilih = input("Pilih (ganjil/genap?): ")
 
-# if pilih == "genap":
-#     for c in range(bawah, atas + 1):
-#         if c % 2 == 0:
-#             print(c)
-# elif pilih == "ganjil":
-#     for c in range(bawah, atas + 1):
-#         if c % 2 != 0:
-#             print(c)
-# else:
-#     print("Pilihan tidak valid.")
+if pilih == "genap":
+    for c in range(bawah, atas + 1):
+        if c % 2 == 0:
+            print(c)
+elif pilih == "ganjil":
+    for c in range(bawah, atas + 1):
+        if c % 2 != 0:
+            print(c)
+else:
+    print("Pilihan tidak valid.")
 
+# =============================================
+# PROGRAM 6: MENENTUKAN BILANGAN PRIMA
+# =============================================
+print("Program menentukan bilangan prima.")
+start = int(input("Masukkan angka awal: "))
+stop = int(input("Masukkan angka akhir: "))
+for a in range(start, stop + 1):
+    if a > 1:
+        for i in range(2, a):
+            if (a % i) == 0:
+                break
+        else:
+            print(a, "adalah bilangan prima.")
 
-# print("Program menentukan bilangan prima.")
-# start = int(input("Masukkan angka awal: "))
-# stop = int(input("Masukkan angka akhir: "))
-# for a in range(start, stop + 1):
-#     if a > 1:
-#         for i in range(2, a):
-#             if (a % i) == 0:
-#                 break
-#         else:
-#             print(a, "adalah bilangan prima.")
+# =============================================
+# PROGRAM 7: PERULANGAN PADA KALIMAT
+# =============================================
+for char in "saya belajar":
+    print(char)
 
+# =============================================
+# PROGRAM 8: MENGHITUNG HURUF VOKAL
+# =============================================
+vokal = "aiueo"
+kata = "Saya Belajar Python"
+jumlah_vokal = 0
+for char in kata.lower():
+    if char in vokal:
+        jumlah_vokal += 1
+print("Jumlah huruf vokal adalah", jumlah_vokal)
 
-# for char in "saya belajar":
-#     print(char)
+# =============================================
+# PROGRAM 9: MENCARI HURUF TERTENTU DALAM TEKS
+# =============================================
+teks = input("Masukkan teks: ").lower()
+cari = input("Masukkan huruf yang ingin dicari: ").lower()
 
-# vokal = "aiueo"
-# kata = "Saya Belajar Python"
-# jumlah_vokal = 0
-# for char in kata.lower():
-#     if char in vokal:
-#         jumlah_vokal += 1
-# print("Jumlah huruf vokal adalah", jumlah_vokal)
+jumlah = 0
+for char in teks:
+    if char.lower() in cari:
+        jumlah += 1  
 
-# teks = input("Masukkan teks: ").lower()
-# cari = input("Masukkan huruf yang ingin dicari: ").lower()
+if jumlah == 0:
+    print(f"Tidak ada huruf '{cari}' yang ditemukan dalam teks.")
+else:
+    print(f"Jumlah huruf '{cari}' dalam teks adalah: {jumlah}")
 
-# jumlah = 0
-# for char in teks:
-#     if char.lower() in cari:
-#         jumlah += 1  
+# =============================================
+# PROGRAM 10: ANALISIS HURUF VOKAL/KONSONAN
+# =============================================
+kata = "Indonesia" 
+huruf = input("Masukkan huruf yang ingin dicari: ").lower()
 
-# if jumlah == 0:
-#     print(f"Tidak ada huruf '{cari}' yang ditemukan dalam teks.")
-# else:
-#     print(f"Jumlah huruf '{cari}' dalam teks adalah: {jumlah}")
+vokal = "aiueo"
 
-# kata = "Indonesia" 
-# huruf = input("Masukkan huruf yang ingin dicari: ").lower()
+if huruf in kata.lower():
+    if huruf in vokal:
+        print(f"Huruf '{huruf}' ada di dalam kata '{kata}' dan termasuk huruf vokal.")
+    else:
+        print(f"Huruf '{huruf}' ada di dalam kata '{kata}' dan termasuk huruf konsonan.")
+else:
+    print(f"Huruf '{huruf}' tidak ada di dalam kata '{kata}'.")
 
-# vokal = "aiueo"
+# =============================================
+# PROGRAM 11: IDENTIFIKASI VOKAL DAN KONSONAN
+# =============================================
+kata = "Indonesia"
+vokal = "aiueo"
 
-# if huruf in kata.lower():
-#     if huruf in vokal:
-#         print(f"Huruf '{huruf}' ada di dalam kata '{kata}' dan termasuk huruf vokal.")
-#     else:
-#         print(f"Huruf '{huruf}' ada di dalam kata '{kata}' dan termasuk huruf konsonan.")
-# else:
-#     print(f"Huruf '{huruf}' tidak ada di dalam kata '{kata}'.")
+for huruf in kata.lower():
+    if huruf in vokal:
+        print(f"Huruf '{huruf}' adalah huruf vokal.")
+    elif huruf.isalpha():  # pastikan hanya huruf, bukan spasi/tanda baca
+        print(f"Huruf '{huruf}' adalah huruf konsonan.")
 
-# kata = "Indonesia"
-# vokal = "aiueo"
+# =============================================
+# PROGRAM 12: PERULANGAN DENGAN LIST
+# =============================================
+angka = [1, 2, 3, 4, 5]
+for a in angka:
+    print(a)
 
-# for huruf in kata.lower():
-#     if huruf in vokal:
-#         print(f"Huruf '{huruf}' adalah huruf vokal.")
-#     elif huruf.isalpha():  # pastikan hanya huruf, bukan spasi/tanda baca
-#         print(f"Huruf '{huruf}' adalah huruf konsonan.")
+# =============================================
+# PROGRAM 13: MENGHITUNG TOTAL ANGKA DALAM LIST
+# =============================================
+angka = [1, 2, 3, 4, 5]
+total = 0
+for a in angka:
+    total += a
+print("Total jumlah angka adalah:", total)
 
-
-## for loop dengan list
-
-# angka = [1, 2, 3, 4, 5]
-# for a in angka:
-#     print(a)
-
-# angka = [1, 2, 3, 4, 5]
-# total = 0
-# for a in angka:
-#     total += a
-# print("Total jumlah angka adalah:", total)
-
+# =============================================
+# PROGRAM 14: FILTER ANGKA GANJIL/GENAP DALAM LIST
+# =============================================
 angka = [1, 2, 3, 4, 5]
 
 # Meminta input dari pengguna
