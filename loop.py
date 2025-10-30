@@ -88,3 +88,34 @@
 #         print(f"Huruf '{huruf}' adalah huruf konsonan.")
 
 
+## for loop dengan list
+
+# angka = [1, 2, 3, 4, 5]
+# for a in angka:
+#     print(a)
+
+# angka = [1, 2, 3, 4, 5]
+# total = 0
+# for a in angka:
+#     total += a
+# print("Total jumlah angka adalah:", total)
+
+angka = [1, 2, 3, 4, 5]
+
+# Meminta input dari pengguna
+pilihan = input("Kamu ingin menampilkan angka 'ganjil' atau 'genap'? ").lower()
+
+if pilihan == "genap":
+    print("Angka genap:")
+    for a in angka:
+        if a % 2 == 0:
+            print(a)
+
+elif pilihan == "ganjil":
+    print("Angka ganjil:")
+    for a in angka:
+        if a % 2 != 0:
+            print(a)
+
+else:
+    print("Pilihan tidak valid! Silakan ketik 'ganjil' atau 'genap'.")
