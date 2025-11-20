@@ -1,110 +1,110 @@
-# Menghitung rata-rata dari sebuah daftar angka menggunakan loop while
+Menghitung rata-rata dari sebuah daftar angka menggunakan loop while
 
-# data = [2, 4, 6, 8, 10]
+data = [2, 4, 6, 8, 10]
 
-# sum = 0    
-# i = 0
+sum = 0    
+i = 0
 
-# if data[1] < 7:
-#     sum += data[1]
+if data[1] < 7:
+    sum += data[1]
 
-# while i < len(data):
-#     sum += data[i]
-#     i += 1
+while i < len(data):
+    sum += data[i]
+    i += 1
 
-# rata_rata = sum / len(data)
-# print("Rata-rata:", rata_rata)
+rata_rata = sum / len(data)
+print("Rata-rata:", rata_rata)
 
-# while untuk mengontrol eksekusi berulang
+while untuk mengontrol eksekusi berulang
 
-# users = ["Ali", "Budi", "Citra", "Dodi", "Ella"]
-# active_users = ["Ali", "Citra", "Ella"]
-# admin = ["Dodi", "Ella"]
+users = ["Ali", "Budi", "Citra", "Dodi", "Ella"]
+active_users = ["Ali", "Citra", "Ella"]
+admin = ["Dodi", "Ella"]
 
-# # Cek status untuk users[1]
-# user = users[1]
+# Cek status untuk users[1]
+user = users[1]
 
-# if user in active_users:
-#     if user in admin:
-#         print(f"{user} is admin and active")
-#     else:
-#         print(f"{user} is active")
-# else:
-#     print(f"{user} is not active")
+if user in active_users:
+    if user in admin:
+        print(f"{user} is admin and active")
+    else:
+        print(f"{user} is active")
+else:
+    print(f"{user} is not active")
 
-# # Cek status untuk seluruh user menggunakan while
-# i = 0
-# while i < len(users):
-#     current_user = users[i]
+# Cek status untuk seluruh user menggunakan while
+i = 0
+while i < len(users):
+    current_user = users[i]
 
-#     if current_user in active_users:
-#         print(f"{current_user} is active")
-#     else:
-#         print(f"{current_user} is not active")
+    if current_user in active_users:
+        print(f"{current_user} is active")
+    else:
+        print(f"{current_user} is not active")
 
-#     i += 1
+    i += 1
     
     
-# penggunaan while loop dalam filter data
-# data = [5, 12, 8, 20, 7, 14, 11]
-# filtered_data = []  
-# i = 0
+penggunaan while loop dalam filter data
+data = [5, 12, 8, 20, 7, 14, 11]
+filtered_data = []  
+i = 0
 
-# while i < len(data):
-#     if data[i] > 10:
-#         filtered_data.append(data[i])
-#     i += 1
+while i < len(data):
+    if data[i] > 10:
+        filtered_data.append(data[i])
+    i += 1
     
-# print("Filtered data :", filtered_data)
+print("Filtered data :", filtered_data)
 
 
-# memisahkan bilangan ganjil dan genap menggunakan while loop
-# data = [5, 12, 8, 20, 7, 14, 11]
+memisahkan bilangan ganjil dan genap menggunakan while loop
+data = [5, 12, 8, 20, 7, 14, 11]
 
-# ganjil = []
-# genap = []
+ganjil = []
+genap = []
 
-# i = 0
-# while i < len(data):
-#     if data[i] % 2 == 0:      
-#         genap.append(data[i])
-#     else:                    
-#         ganjil.append(data[i])
-#     i += 1
+i = 0
+while i < len(data):
+    if data[i] % 2 == 0:      
+        genap.append(data[i])
+    else:                    
+        ganjil.append(data[i])
+    i += 1
 
-# print("Bilangan genap :", genap)
-# print("Bilangan ganjil:", ganjil)
+print("Bilangan genap :", genap)
+print("Bilangan ganjil:", ganjil)
 
-# penggunaan while loop dalam transformasi data
-# harga = [10000, 25000, 15000, 30000]
-# i = 0
+penggunaan while loop dalam transformasi data
+harga = [10000, 25000, 15000, 30000]
+i = 0
 
-# while i < len(harga):
-#     harga[i] = 'Rp ' + str(harga[i])
-#     i += 1
+while i < len(harga):
+    harga[i] = 'Rp ' + str(harga[i])
+    i += 1
     
-# print("Harga setelah transformasi:", harga)
+print("Harga setelah transformasi:", harga)
 
-# perulangan tanpa batas dengan while True
-# while (1+2==3):
-#     print("helo world")  
+perulangan tanpa batas dengan while True
+while (1+2==3):
+    print("helo world")  
 
-# mencari elemen dalam daftar menggunakan while loop
+mencari elemen dalam daftar menggunakan while loop
     
-# listKota = ["Jakarta", "Bandung", "Surabaya", "Medan"]
-# KotaYangDicari = input("Masukkan nama kota yang dicari: ")
+listKota = ["Jakarta", "Bandung", "Surabaya", "Medan"]
+KotaYangDicari = input("Masukkan nama kota yang dicari: ")
 
-# i = 0
-# while i < len(listKota):
-#     if listKota[i].lower() == KotaYangDicari.lower():
-#         print(f"Kota {KotaYangDicari} ditemukan di indeks ke-{i}.")
-#         break
-#     print(f"Memeriksa indeks ke-{i}: {listKota[i]} - bukan kota yang dicari.")
-#     i += 1
-# else:
-#     print(f"Kota {KotaYangDicari} tidak ditemukan dalam daftar.")
+i = 0
+while i < len(listKota):
+    if listKota[i].lower() == KotaYangDicari.lower():
+        print(f"Kota {KotaYangDicari} ditemukan di indeks ke-{i}.")
+        break
+    print(f"Memeriksa indeks ke-{i}: {listKota[i]} - bukan kota yang dicari.")
+    i += 1
+else:
+    print(f"Kota {KotaYangDicari} tidak ditemukan dalam daftar.")
 
-# cara menghentikan loop while menggunakan break
+cara menghentikan loop while menggunakan break
 i=0
 while i<10:
     print(i)
