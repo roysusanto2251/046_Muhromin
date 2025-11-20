@@ -76,11 +76,38 @@
 # print("Bilangan ganjil:", ganjil)
 
 # penggunaan while loop dalam transformasi data
-harga = [10000, 25000, 15000, 30000]
-i = 0
+# harga = [10000, 25000, 15000, 30000]
+# i = 0
 
-while i < len(harga):
-    harga[i] = 'Rp ' + str(harga[i])
-    i += 1
+# while i < len(harga):
+#     harga[i] = 'Rp ' + str(harga[i])
+#     i += 1
     
-print("Harga setelah transformasi:", harga)
+# print("Harga setelah transformasi:", harga)
+
+# perulangan tanpa batas dengan while True
+# while (1+2==3):
+#     print("helo world")  
+
+# mencari elemen dalam daftar menggunakan while loop
+    
+# listKota = ["Jakarta", "Bandung", "Surabaya", "Medan"]
+# KotaYangDicari = input("Masukkan nama kota yang dicari: ")
+
+# i = 0
+# while i < len(listKota):
+#     if listKota[i].lower() == KotaYangDicari.lower():
+#         print(f"Kota {KotaYangDicari} ditemukan di indeks ke-{i}.")
+#         break
+#     print(f"Memeriksa indeks ke-{i}: {listKota[i]} - bukan kota yang dicari.")
+#     i += 1
+# else:
+#     print(f"Kota {KotaYangDicari} tidak ditemukan dalam daftar.")
+
+# cara menghentikan loop while menggunakan break
+i=0
+while i<10:
+    print(i)
+    if i==5:
+        break
+    i+=1
